@@ -1,5 +1,5 @@
 import "./App.css";
-import FeedbackForm from "./components/FeedbackForm";
+import MainPage from "./components/MainPage";
 import ReviewFeedback from "./components/ReviewFeedback";
 import feedbackData from "./data/feedbackData"
 import { Routes, Route, Link } from "react-router-dom";
@@ -26,7 +26,7 @@ const App = () => {
         <Route
           exact
           path="/"
-          element={<FeedbackForm handleAllFeedback={handleAllFeedback} />}
+          element={<MainPage handleAllFeedback={handleAllFeedback} />}
         />
         <Route
           path="/ReviewFeedback"
