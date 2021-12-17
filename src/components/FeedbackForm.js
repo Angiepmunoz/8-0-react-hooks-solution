@@ -1,5 +1,5 @@
 import React from "react";
-// import "./FeedbackForm.css"
+import "./FeedbackForm.css"
 
 const FeedbackForm = (props) => {
     return (
@@ -18,7 +18,7 @@ const FeedbackForm = (props) => {
                 <input id="exp-4" type="radio" name="projectExp" value="4" onChange={(e) => props.handleForm(e)}/>
             </label>
             <p>Provide feedback for your instructors:</p>
-            <textarea id="instFeedback" name="instFeedback" onChange={(e) => props.handleForm(e)}></textarea >
+            <textarea id="instFeedback" name="instFeedback" onChange={(e)=>props.handleForm(e)}></textarea >
             <p>Provide feedback for your group members:</p>
             <textarea id="fellowFeedback" name="fellowFeedback" onChange={(e) => props.handleForm(e)}></textarea>
             {/* <Link to="/confirmation"> */}
